@@ -19,10 +19,6 @@ Problem 5
 Write a program that outputs all possibilities to put + or - or nothing between the numbers 1, 2, ..., 9 (in this order) such that the result is always 100. For example: 1 + 2 + 34 – 5 + 67 – 8 + 9 = 100.
 """
 
-from itertools import compress, product
-
-def combinations(items):
-    return ( set(compress(items,mask)) for mask in product(*[[0,1]]*len(items)) )
 
 # Write three functions that compute the sum of the numbers in a given list using a for-loop, a while-loop, and recursion.
 def problem1():
@@ -102,7 +98,7 @@ def problem4():
 def problem5():
     #yeah this aint happening either
     fives = 55
-    
+
 if __name__ == '__main__':
     problem1() 
     problem2() 
