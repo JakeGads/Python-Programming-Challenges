@@ -27,7 +27,7 @@ def cdr(a,b):
     return f[1]
 
 def complete(a,b):
-    print("CAR:\t " + str(car(a,b)))
+    print("CAR:\t" + str(car(a,b)))
     print("CDR:\t" + str(cdr(a,b)))
 
 def main():
